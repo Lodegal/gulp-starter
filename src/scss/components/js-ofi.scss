@@ -1,0 +1,12 @@
+.js-ofi {
+  &_cover {
+    object-fit: cover;
+    object-position: center;
+    font-family: 'object-fit: cover; object-position: center;';
+  }
+  &_contain {
+    object-fit: contain;
+    object-position: center;
+    font-family: 'object-fit: contain; object-position: center;';
+  }
+}
