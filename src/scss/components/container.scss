@@ -1,10 +1,3 @@
-$container-padding: 15px;
-$container-xl-width: 1190px;
-$container-lg-width: 960px;
-$container-md-width: 720px;
-$container-sm-width: 540px;
-
-
 .container {
   margin: 0 auto;
   padding: 0 $container-padding;
@@ -13,25 +6,30 @@ $container-sm-width: 540px;
 
 @media (min-width: 576px) {
   .container {
-    max-width: $container-sm-width;
+    max-width:  map-get($container-breakpoints, sm);
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: $container-md-width;
+    max-width: map-get($container-breakpoints, md);
   }
 
 }
 
 @media (min-width: 992px) {
   .container {
-    max-width: $container-lg-width;
+    max-width: map-get($container-breakpoints, lg);
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: $container-xl-width;
+    max-width: map-get($container-breakpoints, xl);
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: map-get($container-breakpoints, xxl);
   }
 }

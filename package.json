@@ -31,7 +31,6 @@
     "require-dir": "^1.2.0",
     "sass": "^1.49.7"
   },
-
   "author": "Butsaiev Alexandr",
   "license": "MIT"
 }

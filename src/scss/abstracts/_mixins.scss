@@ -1,5 +1,12 @@
 // MIXINS
 
+// Media queries mixin
+@mixin media($media-breakpoint) {
+  @media (max-width: map-get($media-breakpoints, $media-breakpoint)) {
+    @content;
+  }
+}
+
 // Placeholder stylization ------------------------------------
 @mixin placeholder {
   &::-webkit-input-placeholder {

@@ -1,3 +1,32 @@
+// Media breakpoints
+
+//Use with mixin "media"
+
+//@mixin media($breakpoint) {
+//  @media (max-width: map-get($breakpoints, $breakpoint)) {
+//    @content;
+//  }
+//}
+
+$media-breakpoints: (
+        xs: 0,
+        sm: 575px,
+        md: 767px,
+        lg: 991px,
+        xl: 1199px,
+        xxl: 1399px
+) !default;
+
+// Container settings:
+$container-padding: 15px;
+$container-breakpoints: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1190px,
+        xxl: 1320px
+) !default;
+
 //Font-size
 $body-font-size: 18px;
 
