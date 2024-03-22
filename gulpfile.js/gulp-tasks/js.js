@@ -11,8 +11,8 @@ const js = () => {
             presets: ['@babel/env']
         }))
         .pipe($.gulp.dest($.path.js.dest))
-        .pipe($.plugins.uglify())
-        .pipe($.plugins.rename({suffix: '.min'}))
+        // .pipe($.plugins.uglify())
+        // .pipe($.plugins.rename({suffix: '.min'}))
         .pipe($.gulp.dest($.path.js.dest))
         .pipe($.browserSync.stream())
 }
