@@ -15,7 +15,7 @@ module.exports = {
         dest: pathDest + '/css'
     },
     js: {
-        src: pathSrc + '/js/main.js',
+        src: pathSrc + '/js/**/*.js',
         watch: pathSrc + '/js/main.js',
         dest: pathDest + '/js'
     },
